@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+    </head>
+
+    <body>
+        <h1>How many numbers do you wish to generate?</h1>
+
+        <form action="/output" method="get" onsubmit="this.querySelector('button').disabled = true;" autocomplete="off">
+            <input type="number" step="any" name="numRequest" min="1" max="30">
+            <button type="submit">Generate</button>
+        </form>
+    </body>
+
+</html>
